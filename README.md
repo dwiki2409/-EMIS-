@@ -1,4 +1,4 @@
-# Electronic Management Intellectual Student (EMIS)
+# TaskPlus
 
 
 Nama: Muhammad Dwiki Septianto  
@@ -7,7 +7,7 @@ NIM: 1217050089
 
 ## Deskripsi Proyek
 
-Proyek ini menerapkan sistem manajemen akademik berbasis web menggunakan teknologi MERN, yang terdiri dari MongoDB, Express.js, React.js, dan Node.js. Sistem ini dirancang untuk meningkatkan efisiensi dan pengalaman pengguna dalam mengelola data akademik. Website EMIS memiliki berbagai fitur yang dirancang untuk meningkatkan pengalaman pengguna terkhusu kaum pelajar.
+Proyek ini menerapkan sistem manajemen akademik berbasis web menggunakan teknologi MERN, yang terdiri dari MongoDB, Express.js, React.js, dan Node.js. Sistem ini dirancang untuk meningkatkan efisiensi dan pengalaman pengguna dalam mengelola data akademik. Website TaskPlus memiliki berbagai fitur yang dirancang untuk meningkatkan pengalaman pengguna terkhusu kaum pelajar.
 
 ## Penjelasan Create, Read, Update, dan Delete
 
