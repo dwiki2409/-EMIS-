@@ -20,12 +20,13 @@ const DetailNotePage = () => {
       setNote({})
       try {
         setLoading(true)
-        const res = await fetch(`/v1/api/notes/${subjectId}/${noteId}`, {
+        const res = await fetch(`https://emis-backend-two.vercel.app/v1/api/notes/${subjectId}/${noteId}`, {
           // Change the URL
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
 
         if (!res.ok) {

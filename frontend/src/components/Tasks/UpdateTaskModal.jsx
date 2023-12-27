@@ -61,11 +61,12 @@ function UpdateTaskModal({ task, subjectId }) {
     try {
       setLoading(true)
 
-      const response = await fetch(`/v1/api/tasks/${subjectId}/${task._id}`, {
+      const response = await fetch(`https://emis-backend-two.vercel.app/v1/api/tasks/${subjectId}/${task._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
         body: JSON.stringify({
           title: titleTask,
           description: editorRef.current.getContent(),

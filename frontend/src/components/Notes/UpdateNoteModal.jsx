@@ -59,11 +59,12 @@ function UpdateNoteModal({ note, subjectId }) {
     try {
       setLoading(true)
 
-      const response = await fetch(`/v1/api/notes/${subjectId}/${note._id}`, {
+      const response = await fetch(`https://emis-backend-two.vercel.app/v1/api/notes/${subjectId}/${note._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
         body: JSON.stringify({
           title: titleNote,
           content: editorRef.current.getContent(),

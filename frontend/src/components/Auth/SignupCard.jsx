@@ -40,11 +40,12 @@ export default function SignupCard() {
   const handleSignup = async () => {
     setLoading(true)
     try {
-      const response = await fetch('/v1/api/users/signup', {
+      const response = await fetch('https://emis-backend-two.vercel.app/v1/api/users/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
+credentials: "include",
         body: JSON.stringify(inputs),
       })
       const data = await response.json()

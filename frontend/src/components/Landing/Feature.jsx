@@ -16,7 +16,7 @@ const features = [
   {
     id: 1,
     title: 'Intuitive and User-Friendly',
-    text: 'Simple and intuitive interface for easy and fast task management.',
+    text: 'Simple and intuitive interface for easy and fast EMIS.',
   },
   {
     id: 2,
@@ -61,7 +61,7 @@ export default function Feature() {
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={'3xl'}>Optimizing Your Task Management</Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
-          Simplify and speed up task management with an intuitive interface and
+          Simplify and speed up https://emis-backend-two.vercel.app with an intuitive interface and
           advanced features.
         </Text>
       </Stack>

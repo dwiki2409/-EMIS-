@@ -28,11 +28,12 @@ const NotesPage = () => {
         setLoading(true)
 
         // Fetch all subject names
-        const subjectRes = await fetch('/v1/api/subjects/list', {
+        const subjectRes = await fetch('https://emis-backend-two.vercel.app/v1/api/subjects/list', {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
         const subjectData = await subjectRes.json()
         setSubject(subjectData)

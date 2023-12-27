@@ -25,21 +25,23 @@ const NotesSubjectPage = () => {
         setLoading(true)
 
         // Fetch all subject names
-        const subjectNamesRes = await fetch('/v1/api/subjects/types', {
+        const subjectNamesRes = await fetch('https://emis-backend-two.vercel.app/v1/api/subjects/types', {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
         const subjectNamesData = await subjectNamesRes.json()
         setSubjectNames(subjectNamesData)
 
         // Fetch notes for the selected subject
-        const notesRes = await fetch(`/v1/api/notes/${subjectId}`, {
+        const notesRes = await fetch(`https://emis-backend-two.vercel.app/v1/api/notes/${subjectId}`, {
           method: 'GET',
           headers: {
-            'Content-Type': 'application/json',
-          },
+          'Content-Type': 'application/json',
+        },
+credentials: "include",
         })
         if (!notesRes.ok) {
           const errorMessage = await notesRes.json()
